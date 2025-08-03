@@ -268,7 +268,7 @@ def main() -> None:
 
     if use_sample:
         # Use the sample PDF
-        sample_path = "/mnt/c/Users/schaduvu/Documents/0. AI/development/llama/ollama_pdf_rag/data/pdfs/sample/devNext.pdf"
+        sample_path = "./data/pdfs/sample/devNext.pdf"
         if os.path.exists(sample_path):
             if st.session_state["vector_db"] is None:
                 with st.spinner("Processing sample PDF..."):
