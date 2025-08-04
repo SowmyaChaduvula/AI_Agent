@@ -48,5 +48,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
       - name: Deploy Streamlit App
-        run: index.html
+        run: pytest run.py --app-test
         
