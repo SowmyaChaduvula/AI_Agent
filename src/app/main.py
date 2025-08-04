@@ -337,6 +337,7 @@ def main() -> None:
     # Chat interface
     with col2:
         message_container = st.container(height=500, border=True)
+        st.components.v1.html("""<a href="/index.html" target="_self">Go to Home Page</a>""", height=50)
 
         # Display chat history
         for i, message in enumerate(st.session_state["messages"]):
