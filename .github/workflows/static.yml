@@ -42,5 +42,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
       - name: Deploy Streamlit App
-        run: nohup python3 run.py >streamlit.log 2>&1 &
+        run: python3 run.py
         
